@@ -1,0 +1,195 @@
+<html>
+
+    <head>
+        <link href="step6.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <script src="step6.js"></script>
+
+    <style>
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+          text-size-adjust: 30px;
+        }
+        th, td {
+          padding: 15px;
+        }
+    
+    </style>
+
+    <script>
+        var CELL_10 = "cell10";
+        var CELL_60 = "cell60";
+    </script>
+
+    <body>
+
+        <div>
+            <label for="text"><h3>WEEK N°</h3></label>
+            <p id="text" style="width: 20px; height: 20; border: 2px solid rgb(182, 182, 182);" align="center">1</p>
+        </div>
+
+        <div>
+            <label for="text"><h3>Monday</h3></label>
+            <p id="text" style="width: 20px; height: 20; border: 2px solid rgb(182, 182, 182);" align="center">18</p>
+        </div>
+
+        <!--Prima tabella-->
+        <table align="center">
+            <tbody>
+                <tr>
+                    <!--Primo riquadro (riga 1 cella 1)-->
+                    <td>
+                        <h3 align="center">Activity to <br>assign</h3>
+                    </td>
+
+                    <!--Secondo riquadro (riga 1 cella 2)-->
+                    <td>
+                        <h3 align="center">EWO 19 - Fisciano<br>Molding - Mechanical</h3>
+                    </td>
+
+                    <td>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <h3>Required TIME = 70 min</h3>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <!--Primo riquadro (riga 1 cella 1)-->
+                                    <td>
+                                        <h3 align="center">Assigned TIME <br>10 min</h3>
+                                    </td>
+
+                                    <!--Secondo riquadro (riga 1 cella 2)-->
+                                    <td>
+                                        <h3 align="center">TIME to be <br>assigned 60 min</h3>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+
+                </tr>
+            </tbody>
+        </table>
+
+        <br>
+
+        <!--Seconda tabella-->
+        <center>
+            <table>
+                <!--TABLE HEAD-->
+                <thead>
+                <tr>
+                    <th></th>
+                    <th>Mainteinance avaiability</th>
+                    <th></th>
+                </tr>
+                </thead>
+                
+                <tbody>
+    
+                <!--Riga della tabella-->
+                <tr>
+                    <!--Prima cella della tabella contenente Workspace e competenze-->
+                    <td>
+                        <!--All'interno della prima cella c'è un'altra tabella con due righe (una per workspace e l'altra per competenze)-->
+                        <table>
+                            <thead>
+                                <tr><h3>Workspace Notes</h3></tr>
+                                <p>Plant stopped from 12:23 p.m.
+                                <br>pending intervention.</br>
+                                Smoke from the XX4 
+                                <br>compressor as a result of loud noise.</br>
+                                ...
+                                </p>
+                                <br>
+                                <tr><h3>Competenze necessarie</h3></tr>
+                                <ul>
+                                    <li>PAV certification</li>
+                                    <li>Mechanical Mainteinance</li>
+                                    <li>Compressor Knowledge</li>
+                                    <li>Molding plant knowledge</li>
+                                    <li>Knowledge of working line P3</li>
+                                </ul>
+                            </thead>
+                        </table>
+                    </td>
+    
+                    <!--Questa è la seconda cella della tabella più esterna-->
+                    <td>
+                        <!--All'interno di questa abbiamo un'altra tabella-->
+                        <table>
+                        <thead>
+                            <tr>
+                                <th>Maintainer</th>
+                                <th>Skills</th>
+                                <th>Avaiab.<br>8:00-9:00</br></th>
+                                <th>Avaiab.<br>9:00-10:00</br></th>
+                                <th>Avaiab.<br>10:00-11:00</br></th>
+                                <th>Avaiab.<br>11:00-12:00</br></th>
+                                <th>Avaiab.<br>14:00-15:00</br></th>
+                                <th>Avaiab.<br>15:00-16:00</br></th>
+                                <th>Avaiab.<br>16:00-17:00</br></th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Pippo</td>
+                                <td align="center">2/5</td>
+                                <td align="center">50 min</td>
+                                <td align="center">30 min</td>
+                                <td align="center">60 min</td>
+                                <td align="center">40 min</td>
+                                <td align="center">60 min</td>
+                                <td id="cell60">
+                                    <div class="button_number" align="center" onclick="mark_button(CELL_60)">60 min</div>
+                                </td> 
+                                <td id="cell10">
+                                    <div class="button_number" align="center" onclick="mark_button(CELL_10)">10 min</div>
+                                </td>                
+                            </tr>
+                                <td>Paperino</td>
+                                <td align="center">4/5</td>
+                                <td align="center">0 min</td>
+                                <td align="center">0 min</td>
+                                <td align="center">10 min</td>
+                                <td align="center">60 min</td>
+                                <td align="center">0 min</td>
+                                <td align="center">0 min</td>
+                                <td align="center">25 min</td>   
+
+                            <tr>
+                                <td>Topolino</td>
+                                <td align="center">3/5</td>
+                                <td align="center">0 min</td>
+                                <td align="center">0 min</td>
+                                <td align="center">0 min</td>
+                                <td align="center">0 min</td>
+                                <td align="center">0 min</td>
+                                <td align="center">0 min</td>
+                                <td align="center">0 min</td>    
+                            </tr>
+
+
+                        </tbody>
+
+                        </table>
+                    </td>
+
+                    <!--Terza cella della tabella più esterna-->
+                    <td>
+                        <div class="button">SEND</div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </center>
+        
+    </body>
+</html>

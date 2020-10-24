@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <h1>STEP 1</h1>
+    <link href="step1.css" rel="stylesheet" type="text/css">
+</head>
+
+<script src="step1.js"></script>
+
+<script>
+    function save_week(){
+        var w = document.getElementById("menu");
+        var week_to_sent = w.options[w.selectedIndex].value;
+        localStorage.setItem("week",week_to_sent);
+        console.log('week saved: ', week_to_sent)
+    }
+</script>
+
+<center>
+    <body>
+        <h1>Select a week</h1>
+    </body>
+
+    <select name="menu" id="menu" style="width:100px; height:30px;" onchange="save_week()">
+        <option value="-">-</option>
+        <option value="1">week1</option>
+        <option value="2">week2</option>
+    </select>
+
+</center>
+
+<p></p>
+
+<center>
+    <div class="button" id="btn" onclick="window.location.href= 'step2.html'">Go</button>
+</center>
+
+</html>

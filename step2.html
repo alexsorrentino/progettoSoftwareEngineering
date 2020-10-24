@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <h1>STEP 2</h1>
+    <link href="step2.css" rel="stylesheet" type="text/css">
+</head>
+
+<style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      text-size-adjust: 30px;
+    }
+    th, td {
+      padding: 15px;
+    }
+
+</style>
+
+<div>
+    <label for="text">WEEK N°</label>
+    <p id="text" style="width: 20px; height: 20; border: 2px solid rgb(182, 182, 182);" align="center"></p>
+</div>
+
+<p></p>
+
+<script>
+
+    window.onload = console.log(localStorage.getItem("week"));
+    document.getElementById("text").innerHTML = localStorage.getItem("week")
+    
+</script>
+
+<table id="table" style="width:100%" align="center">
+    <thead>
+      <th>ID</th>
+      <th>AREA</th> 
+      <th>TYPE</th>
+      <th>Estimated intervention time [min]</th>
+      <th></th>
+    </thead>
+
+
+    <tbody>
+        <tr>
+        <td id="id" style="text-align:center">1</td>
+        <td id="area" style="text-align:center">Fisciano-Molding</td>
+        <td id="area" style="text-align:center">Mechanical</td>
+        <td id="area" style="text-align:center">120</td>
+        <td id="btn" style="text-align:center"><div class="button">Select</div></td>
+        </tr>
+
+        <tr>
+        <td id="id" style="text-align:center">2</td>
+        <td id="id" style="text-align:center">Nurso-Carpentery</td>
+        <td id="id" style="text-align:center">Electrical</td>
+        <td id="id" style="text-align:center">30</td>
+        <td id="btn" style="text-align:center"><div class="button">Select</div></td>        
+        </tr>
+
+        <tr>
+        <td id="id" style="text-align:center">3</td>
+        <td id="id" style="text-align:center">Morra-Painting</td>
+        <td id="id" style="text-align:center">Elantra</td>
+        <td id="id" style="text-align:center">250</td>
+        <td id="btn" style="text-align:center"><div class="button">Select</div></td>       
+        </tr>>
+
+    </tbody>
+
+</table>
+
+
+</html>
